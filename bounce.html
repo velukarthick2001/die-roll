@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>addClass demo</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+  }
+  .big-blue {
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+  }
+  </style>
+ 
+   
+</head>
+<body>
+ 
+<div></div>
+ 
+<script>
+alert("hi");
+$( "div" ).click(function() {
+  $( this ).addClass( "big-blue", 1000, "easeOutBounce" );
+});
+</script>
+ 
+</body>
+</html>	
